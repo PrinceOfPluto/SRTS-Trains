@@ -6,8 +6,8 @@
         <label>Handcar incoming</label>
         <thingClass>SRTS.SRTSIncoming</thingClass>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/handcar</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/SRTS_Trains/Cars/handcar_incoming</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutFlying</shaderType>
             <drawSize>(3,3)</drawSize>
         </graphicData>
@@ -16,7 +16,7 @@
             <movementType>Decelerate</movementType>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
             <shadowSize>(3,3)</shadowSize>
-            <anticipationSound>SRTS_Trains_Sound_Launch</anticipationSound>
+            <anticipationSound>SRTS_Trains_Sound_Handcar_Launch</anticipationSound>
             <anticipationSoundTicks>100</anticipationSoundTicks>
             <motesPerCell>0</motesPerCell>
         </skyfaller>
@@ -27,8 +27,8 @@
         <label>Handcar leaving</label>
         <thingClass>SRTS.SRTSLeaving</thingClass>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/handcar</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/SRTS_Trains/Cars/handcar_leaving</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutFlying</shaderType>
             <drawSize>(3,3)</drawSize>
         </graphicData>
@@ -38,7 +38,7 @@
             <reversed>true</reversed>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
             <shadowSize>(3,3)</shadowSize>
-            <anticipationSound>SRTS_Trains_Sound_Launch</anticipationSound>
+            <anticipationSound>SRTS_Trains_Sound_Handcar_Launch</anticipationSound>
             <anticipationSoundTicks>-10</anticipationSoundTicks>
             <ticksToImpactRange>
                 <min>-40</min>
@@ -55,8 +55,8 @@
         <scatterableOnMapGen>false</scatterableOnMapGen>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/handcar</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/SRTS_Trains/Cars/handcar_leaving</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3,3)</drawSize>
         </graphicData>
         <rotatable>false</rotatable>
@@ -75,17 +75,18 @@
         <label>Steam engine incoming</label>
         <thingClass>SRTS.SRTSIncoming</thingClass>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a</texPath>
+            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a_incoming</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutFlying</shaderType>
-            <drawSize>(12,3)</drawSize>
+            <drawSize>(4,16)</drawSize>
+            <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>
         <skyfaller>
             <movementType>Decelerate</movementType>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-            <shadowSize>(12,3)</shadowSize>
-            <anticipationSound>SRTS_Trains_Sound_Launch</anticipationSound>
+            <shadowSize>(16,4)</shadowSize>
+            <anticipationSound>SRTS_Trains_Sound_Steam_Train_Incoming</anticipationSound>
             <anticipationSoundTicks>100</anticipationSoundTicks>
             <motesPerCell>0</motesPerCell>
         </skyfaller>
@@ -96,18 +97,19 @@
         <label>Steam engine leaving</label>
         <thingClass>SRTS.SRTSLeaving</thingClass>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a</texPath>
+            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a_leaving</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutFlying</shaderType>
-            <drawSize>(12,3)</drawSize>
+            <drawSize>(4,16)</drawSize>
+            <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>
         <skyfaller>
             <movementType>Accelerate</movementType>
             <reversed>true</reversed>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-            <shadowSize>(12,3)</shadowSize>
-            <anticipationSound>SRTS_Trains_Sound_Launch</anticipationSound>
+            <shadowSize>(16,4)</shadowSize>
+            <anticipationSound>SRTS_Trains_Sound_Steam_Train_Leaving</anticipationSound>
             <anticipationSoundTicks>-10</anticipationSoundTicks>
             <ticksToImpactRange>
                 <min>-40</min>
@@ -126,9 +128,10 @@
         <scatterableOnMapGen>false</scatterableOnMapGen>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a</texPath>
+            <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a_leaving</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(12,3)</drawSize>
+            <drawSize>(4,16)</drawSize>
+            <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
