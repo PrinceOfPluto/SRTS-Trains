@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="NECShipBase">
+    <defName>SRTS_Trains_Handcar</defName>
+    <label>Handcar</label>
+    <description>A railroad car powered by its passengers. Mostly used for railway maintenance or mining.
+
+Capacity: 250
+Travel Speed: 2
+Fuel Type: Steel
+Fuel Cost per World Tile: 10</description>
+    <graphicData>
+      <texPath>Things/Building/SRTS_Trains/Cars/handcar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+      <drawOffset>(0,0,0.5)</drawOffset>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <staticSunShadowHeight>0.15</staticSunShadowHeight>
+    <placeWorkers Inherit="False">
+    </placeWorkers>
+    <uiIconScale>1</uiIconScale>
+    <size>(3,2)</size>
+    <rotatable>false</rotatable>
+    <passability>Standable</passability>
+    <designationCategory>DecoRailProp</designationCategory>
+    <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>10</Mass>
+      <Beauty>1</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.5</restEffectiveness>
+        <massCapacity>250</massCapacity>
+      </li>
+      <li Class="SRTS.CompProperties_LaunchableSRTS">
+        <travelSpeed>2</travelSpeed>
+        <fuelPerTile>10</fuelPerTile>
+        <minPassengers>1</minPassengers>
+        <maxPassengers>3</maxPassengers>
+        <spaceFaring>false</spaceFaring>
+        <shuttleBayLanding>false</shuttleBayLanding>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>200</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Research_SRTS_Trains_Metal_Rails</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <modExtensions>
+      <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+        <mirror>True</mirror>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="NECShipBase">
+    <defName>SRTS_Trains_Steam_Engine_A</defName>
+    <label>Steam Engine</label>
+    <description>A railroad car powered by its passengers. Mostly used for railway maintenance or mining.
+
+Capacity: 5000
+Travel Speed: 5
+Fuel Type: Chemfuel
+Fuel Cost per World Tile: 10</description>
+    <graphicData>
+      <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(16,4)</drawSize>
+      <drawOffset>(0,0,0.5)</drawOffset>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <placeWorkers Inherit="False">
+    </placeWorkers>
+    <uiIconScale>1</uiIconScale>
+    <size>(16,2)</size>
+    <rotatable>false</rotatable>
+    <passability>Standable</passability>
+    <designationCategory>DecoRailProp</designationCategory>
+    <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>10</Mass>
+      <Beauty>1</Beauty>
+    </statBases>
+    <costList>
+      <Steel>500</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.5</restEffectiveness>
+        <massCapacity>5000</massCapacity>
+      </li>
+      <li Class="SRTS.CompProperties_LaunchableSRTS">
+        <travelSpeed>5</travelSpeed>
+        <fuelPerTile>10</fuelPerTile>
+        <minPassengers>1</minPassengers>
+        <maxPassengers>50</maxPassengers>
+        <spaceFaring>false</spaceFaring>
+        <shuttleBayLanding>false</shuttleBayLanding>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>200</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Research_SRTS_Trains_Metal_Rails</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <modExtensions>
+      <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+        <mirror>True</mirror>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Handcar"]/label</xpath>
+        <value>
+            <label>Decorative Handcar</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Handcar"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Flatcar"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Flatcar_C_Pipes"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="RailBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="SleeperBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="SignBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="FlasherBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+                <li>Electricity</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="CargoBase"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Catenary_Single"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+                <li>Electricity</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Signpost"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Metal_Rails</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+</Patch>
