@@ -11,9 +11,9 @@ Travel Speed: 2
 Fuel Type: Steel
 Fuel Cost per World Tile: 10</description>
     <graphicData>
-      <texPath>Things/Building/SRTS_Trains/Cars/handcar</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Building/DecoRailProp/Cars/handcar</texPath>
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,0.5)</drawOffset>
       <drawRotated>false</drawRotated>
