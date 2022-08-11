@@ -33,6 +33,8 @@ A handcar is a railroad car powered by its passengers, or by people pushing the 
 
 **Mass Capacity**: 250
 
+**Max Passengers**: 4
+
 **Travel Speed**: 2
 
 **Fuel Type**: Steel
@@ -40,6 +42,44 @@ A handcar is a railroad car powered by its passengers, or by people pushing the 
 **Fuel Cost per World Tile**: 10
 
 **Notes**: Handcar is currently not rotatable, but this will be updated once PentalimbedP creates a vertical texture. I chose the handcar to use Steel as fuel to simulate laying down new rails or repairing existing rails. The amount of 10 represents a simulated balance between the Steel it would cost to build "new" railways compared to using the railcar on "existing" rails. You could also think of it as the Steel is costs to repair rails damaged by raiders. Willing to change this based on feedback or perhaps create a mod option.
+
+### Frisco 1503
+
+![Frisco 1503 Image](https://i.imgur.com/pB7s09D.png)
+
+Frisco No. 1503 was built by Baldwin Locomotive Works in 1923. In March of 1938, it received stainless steel running boards skirts, retractable coupler pilot and covered pilot deck. In 1948 they removed all the added beauty and it was put into freights service. Scrapped in 1950s.
+
+**Stats**
+
+**Mass Capacity**: 50000
+
+**Max Passengers**: 100
+
+**Travel Speed**: 3
+
+**Fuel Type**: Wood or Chemfuel
+
+**Fuel Cost per World Tile**: 30
+
+### Old Steam Locomotive
+
+![Steam Locomotive Image](https://i.imgur.com/XDlZBGS.png)
+
+A locomotive that burns fuel to heat water, generating steam that moves pistons connected to the wheels.
+
+**Stats**
+
+**Mass Capacity**: 50000
+
+**Max Passengers**: 100
+
+**Travel Speed**: 3
+
+**Fuel Type**: Wood or Chemfuel
+
+**Fuel Cost per World Tile**: 30
+
+**Notes**: This train's texture will be updated to a more Rimworld vanilla art style in the future.
 
 ---
 
@@ -59,7 +99,7 @@ With this current implementation of trains relying on SRTS Expanded, there are s
 
 ★ **Railways tab is empty**
 
-Research "Metal Railways" in the SRTS Trains research tab.
+Research "Metal Railways" and "Steam Locomotives" in the SRTS Trains research tab.
 
 ★ **My train doesn't have any functionality**
 

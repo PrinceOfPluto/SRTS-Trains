@@ -88,4 +88,18 @@
             </researchPrerequisites>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Frisco_1503_Loco_WE"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Research_SRTS_Trains_Steam_Engine</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="5LCAT_DRP_Frisco_1503_Loco_WE"]/label</xpath>
+        <value>
+            <label>Decorative Frisco 1503</label>
+        </value>
+    </Operation>
 </Patch>
