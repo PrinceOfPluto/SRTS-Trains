@@ -242,10 +242,10 @@ Fuel Cost per World Tile: 10</description>
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="SRTSTrainsFrisco">
-    <defName Inherit="False">SRTS_Trains_Steam_Engine_Frisco_Wood</defName>
-    <label Inherit="False">Woodburning Frisco 1503</label>
-    <description Inherit="False">Frisco No. 1503 was built by Baldwin Locomotive Works in 1923. In March of 1938, it received stainless steel running boards skirts, retractable coupler pilot and covered pilot deck. In 1948 they removed all the added beauty and it was put into freights service. Scrapped in 1950s.
+  <ThingDef ParentName="NECShipBase" Name="SRTSTrainsFrisco">
+    <defName>SRTS_Trains_Steam_Engine_Frisco_Wood</defName>
+    <label>Woodburning Frisco 1503</label>
+    <description>Frisco No. 1503 was built by Baldwin Locomotive Works in 1923. In March of 1938, it received stainless steel running boards skirts, retractable coupler pilot and covered pilot deck. In 1948 they removed all the added beauty and it was put into freights service. Scrapped in 1950s.
 
 This model is an inefficient wood burning locomotive.
 
@@ -254,7 +254,34 @@ Max Passengers: 100
 Travel Speed: 3
 Fuel Type: Wood
 Fuel Cost per World Tile: 30</description>
-    <comps Inherit="False">
+    <graphicData>
+      <texPath>Things/Building/SRTS_Trains/Cars/frisco_1503_h</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(12,4)</drawSize>
+      <drawOffset>(0,0,1)</drawOffset>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <placeWorkers Inherit="False">
+    </placeWorkers>
+    <uiIconScale>1</uiIconScale>
+    <size>(11,2)</size>
+    <rotatable>true</rotatable>
+    <passability>Standable</passability>
+    <designationCategory>DecoRailProp</designationCategory>
+    <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>10</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+    <costList>
+      <Steel>2000</Steel>
+    </costList>
+    <comps>
       <li Class="CompProperties_Transporter">
         <restEffectiveness>1.5</restEffectiveness>
         <massCapacity>50000</massCapacity>
@@ -284,12 +311,21 @@ Fuel Cost per World Tile: 30</description>
         <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
       </li>
     </comps>
+    <researchPrerequisites>
+      <li>Research_SRTS_Trains_Steam_Engine</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <modExtensions>
+      <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+        <mirror>True</mirror>
+      </li>
+    </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="SRTSTrainsSteamEngineA">
-    <defName Inherit="False">SRTS_Trains_Steam_Engine_A_Wood</defName>
-    <label Inherit="False">Woodburning Steam Locomotive</label>
-    <description Inherit="False">A locomotive that burns fuel to heat water, generating steam that moves pistons connected to the wheels. This model is a somewhat efficient chemfuel burning locomotive.
+  <ThingDef ParentName="NECShipBase" Name="SRTSTrainsSteamEngineA">
+    <defName>SRTS_Trains_Steam_Engine_A_Wood</defName>
+    <label>Woodburning Steam Locomotive</label>
+    <description>A locomotive that burns fuel to heat water, generating steam that moves pistons connected to the wheels. This model is a somewhat efficient chemfuel burning locomotive.
 
 This model is an inefficient wood burning locomotive.
 
@@ -298,7 +334,35 @@ Max Passengers: 100
 Travel Speed: 3
 Fuel Type: Wood
 Fuel Cost per World Tile: 30</description>
-    <comps Inherit="False">
+    <graphicData>
+      <texPath>Things/Building/SRTS_Trains/Cars/steam_engine_a</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(16,4)</drawSize>
+      <drawOffset>(0,0,0.5)</drawOffset>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <placeWorkers Inherit="False">
+    </placeWorkers>
+    <uiIconScale>1</uiIconScale>
+    <size>(16,2)</size>
+    <rotatable>true</rotatable>
+    <passability>Standable</passability>
+    <designationCategory>DecoRailProp</designationCategory>
+    <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>10</Mass>
+      <Beauty>10</Beauty>
+    </statBases>
+    <costList>
+      <Steel>2000</Steel>
+    </costList>
+    <comps>
       <li Class="CompProperties_Transporter">
         <restEffectiveness>1.5</restEffectiveness>
         <massCapacity>50000</massCapacity>
@@ -328,6 +392,15 @@ Fuel Cost per World Tile: 30</description>
         <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
       </li>
     </comps>
+    <researchPrerequisites>
+      <li>Research_SRTS_Trains_Steam_Engine</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <modExtensions>
+      <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+        <mirror>True</mirror>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>
