@@ -67,7 +67,7 @@
             <li>Decorative Railway Prop</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="CAT_DRP_EMD_SD40_Loco"]</xpath>
+            <xpath>/Defs/ThingDef[defName="CAT_DRP_EMD_SD40_Loco"]/label</xpath>
             <value>
                 <label>Decorative EMD SD40-2</label>
             </value>

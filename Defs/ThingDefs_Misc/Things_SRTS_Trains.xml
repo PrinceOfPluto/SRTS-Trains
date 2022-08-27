@@ -366,14 +366,14 @@
             <texPath>Things/Building/SRTS_Trains/Cars/emd_sd40_loco_incoming</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutFlying</shaderType>
-            <drawSize>(4,16)</drawSize>
+            <drawSize>(4,13)</drawSize>
             <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>
         <skyfaller>
             <movementType>Decelerate</movementType>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-            <shadowSize>(16,4)</shadowSize>
+            <shadowSize>(13,4)</shadowSize>
             <anticipationSound>SRTS_Trains_Sound_Diesel_Launch</anticipationSound>
             <anticipationSoundTicks>100</anticipationSoundTicks>
             <motesPerCell>0</motesPerCell>
@@ -388,7 +388,7 @@
             <texPath>Things/Building/SRTS_Trains/Cars/emd_sd40_loco_leaving</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutFlying</shaderType>
-            <drawSize>(4,16)</drawSize>
+            <drawSize>(4,13)</drawSize>
             <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>
@@ -396,7 +396,7 @@
             <movementType>Accelerate</movementType>
             <reversed>true</reversed>
             <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
-            <shadowSize>(16,4)</shadowSize>
+            <shadowSize>(13,4)</shadowSize>
             <anticipationSound>SRTS_Trains_Sound_Diesel_Launch</anticipationSound>
             <anticipationSoundTicks>-10</anticipationSoundTicks>
             <ticksToImpactRange>
@@ -416,7 +416,7 @@
         <graphicData>
             <texPath>Things/Building/SRTS_Trains/Cars/emd_sd40_loco_leaving</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(4,16)</drawSize>
+            <drawSize>(4,13)</drawSize>
             <drawOffset>(0,0,1)</drawOffset>
         </graphicData>
         <rotatable>false</rotatable>

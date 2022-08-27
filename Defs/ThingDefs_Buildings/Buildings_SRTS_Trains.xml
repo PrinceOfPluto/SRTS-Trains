@@ -418,7 +418,7 @@ Fuel Cost per World Tile: 5</description>
     <graphicData>
       <texPath>Things/Building/SRTS_Trains/Cars/emd_sd40_loco</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(12,4)</drawSize>
+      <drawSize>(13,4)</drawSize>
       <drawOffset>(0,0,1)</drawOffset>
       <drawRotated>false</drawRotated>
     </graphicData>
