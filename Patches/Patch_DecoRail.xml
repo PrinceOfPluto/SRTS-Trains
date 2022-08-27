@@ -62,4 +62,28 @@
             </value>
         </match>
     </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Decorative Railway Prop</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="CAT_DRP_EMD_SD40_Loco"]</xpath>
+            <value>
+                <label>Decorative EMD SD40-2</label>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Decorative Railway Prop</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="CAT_DRP_EMD_SD40_Loco"]</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>Research_SRTS_Trains_Diesel</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
 </Patch>

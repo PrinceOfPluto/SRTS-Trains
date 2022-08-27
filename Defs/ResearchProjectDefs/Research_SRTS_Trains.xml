@@ -32,4 +32,19 @@
         <researchViewY>0</researchViewY>
     </ResearchProjectDef>
 
+    <ResearchProjectDef>
+        <tab>Research_SRTS_Trains</tab>
+        <defName>Research_SRTS_Trains_Diesel</defName>
+        <label>Diesel Locomotives</label>
+        <description>Build diesel engine locomotives capable of efficiently hauling massive amounts of cargo across the Rim.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Electricity</li>
+            <li>Research_SRTS_Trains_Steam_Engine</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
 </Defs>
