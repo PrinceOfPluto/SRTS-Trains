@@ -2,6 +2,6 @@
 <loadFolders>
     <v1.4>
         <li>/</li>
-        <li IfModActive="mlie.steamworld, mlie.coalexpanded">CoalPatches</li>
+        <li IfModActive="mlie.steamworld, mlie.coalexpanded, zal.medievaltimes">CoalPatches</li>
     </v1.4>
 </loadFolders>
